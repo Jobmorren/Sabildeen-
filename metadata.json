@@ -1,0 +1,8 @@
+{
+  "name": "Sabildeen - Islamic Companion",
+  "description": "A comprehensive Islamic lifestyle app featuring accurate prayer times, AI-powered spiritual guidance, mosque finder, and daily inspiration.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Sabildeen - Islamic Companion",
+  "short_name": "Sabildeen",
+  "id": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#10b981",
+  "orientation": "portrait",
+  "scope": "/",
+  "categories": ["lifestyle", "education", "books_and_reference"],
+  "description": "Votre compagnon quotidien : horaires de prière, Qibla, Coran et Hadiths.",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/google-fonts/noto-emoji/main/png/128/emoji_u1f54c.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://raw.githubusercontent.com/google-fonts/noto-emoji/main/png/512/emoji_u1f54c.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

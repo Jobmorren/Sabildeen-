@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Sabildeen - Islamic Companion | Coran, Prière & Qibla</title>
+    <meta name="description" content="Sabildeen est votre compagnon musulman quotidien. Horaires de prière précis, Coran, Qibla, Hadiths et IA islamique. Disponible sur iOS et Android." />
+    <meta name="keywords" content="Sabildeen, Islam, Muslim App, Coran, Quran, Horaires de prière, Prayer Times, Qibla, Hadith, Adhan, App Islamique" />
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sabildeen - Application Islamique Complète" />
+    <meta property="og:description" content="Tout ce dont vous avez besoin : Coran, Prière, Qibla et IA. Installez Sabildeen maintenant." />
+    <meta property="og:image" content="https://raw.githubusercontent.com/google-fonts/noto-emoji/main/png/512/emoji_u1f54c.png" />
+
+    <!-- PWA Configuration -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Sabildeen" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/google-fonts/noto-emoji/main/png/512/emoji_u1f54c.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              arabic: ['Amiri', 'serif'],
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.3s ease-out',
+              'fade-in-up': 'fadeInUp 0.4s ease-out',
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            },
+            backgroundImage: {
+              'islamic-pattern': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2310b981' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        overscroll-behavior-y: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .font-arabic {
+        font-family: 'Amiri', serif;
+      }
+      
+      /* Modern Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #475569;
+        border-radius: 10px;
+      }
+      
+      /* Safe Area Support */
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom, 16px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+
+      /* Premium Dark Mode Styles - As requested */
+      .dark body {
+          background: radial-gradient(circle at top, #0d1b1e 0%, #050a0f 100%);
+          color: #e0e0e0;
+      }
+      /* Ensure text selection matches theme */
+      ::selection {
+        background: rgba(46, 204, 113, 0.3);
+        color: white;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
